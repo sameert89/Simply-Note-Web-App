@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simply Note</title>
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="manifest" href="./site.webmanifest">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <!--fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Patrick+Hand+SC&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="m-0 p-0 ">
+  <form class="input_form">
+    <div class="form-group">
+      <label for="Title" class="form_label">Title</label>
+      <input type="text" class="form-control" id="Title" placeholder="Please Enter the Title" required>
+    </div>
+    <div class="form-group">
+      <label for="content" class="form_label">Content</label>
+      <textarea class="form-control" id="content" rows="5" placeholder="Please Enter the Content" required></textarea>
+    </div>
+    <div class="form-group btns"><button type="button" onclick="addNote()" class="btn_create"> Create Simply! </button>
+      <button onclick="hideForm()" class="btn_exit">Exit</button>
+    </div>
+
+  </form>
+  <div class="bg container-fluid">
+
+  </div>
+  <div class="container-fluid note_space">
+    <h1 class="heading"><strong>Simply Note <i class="fa-solid fa-pen-clip"></i></strong></h1>
+
+    <div class="row card_deck">
+      <div class="card text-white bg-warning mb-3 col-md-12 col-lg-4 col-sm-12" style="max-width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Sample Note</h5>
+          <p class="card-text">Hello This is Simply Note, Your easy digital note taking app. Press the add button to
+            add a new Note. This Sample Note will be deleted after a new Note is added. Happy Note Taking🐼</p>
+        </div>
+      </div>
+      <div class="add_button card text-white mb-3 no_bg col-md-12 col-lg-4 col-sm-12" style="max-width: 18rem;">
+        <button type="button" id="new_note" onclick="showForm()"><i class="fa-solid fa-circle-plus fa-5x"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="owl">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <lottie-player style="width: 20vw" src="https://assets5.lottiefiles.com/packages/lf20_v8goejhv.json"
+      background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+  </div>
+  </div>
+  <!-- Bootstrap JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/529ac0b381.js" crossorigin="anonymous"></script>
+  <!-- custom JS -->
+  <script src="index.js"></script>
+</body>
+
+</html>
